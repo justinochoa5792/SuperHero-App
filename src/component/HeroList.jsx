@@ -1,10 +1,11 @@
 import React from "react";
+import "../App.css";
 
 const HeroList = (props) => {
   console.log(props);
   let hero = props.filteredHero.map((comic) => {
     return (
-      <ul>
+      <ul className="hero">
         <img
           src={comic.image.small_url}
           alt={comic.name}
